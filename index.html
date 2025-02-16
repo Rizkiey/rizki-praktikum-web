@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rizki Shoe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+            font-style: italic;
+        }
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+        .product-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-card .card-body {
+            text-align: center;
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .search-bar {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+          <a class="navbar-brand" href="#">RizKicks</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#products">Products</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Cart</a>
+                  </li>
+              </ul>
+              <!-- Formulir Search di Tengah -->
+              <form class="d-flex search-bar mx-3">
+                <div class="input-group">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-secondary" type="submit">
+                        <i class="bi bi-search"></i> <!-- Ikon pencarian Bootstrap -->
+                    </button>
+                </div>
+            </form>
+              <!-- Tombol Masuk dan Daftar -->
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <button class="btn btn-sm btn-outline-secondary" type="button">Masuk</button>
+                      <button class="btn btn-sm btn-outline-secondary" type="button">Daftar</button>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+<!-- Akhir Navbar -->
+
+<!-- Carousel -->
+<div id="shoeCarousel" class="carousel slide mt-3" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#shoeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#shoeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#shoeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/sepatu1.png" class="d-block w-100" alt="Shoe 1">
+    </div>
+    <div class="carousel-item">
+      <img src="images/sepatu2.png" class="d-block w-100" alt="Shoe 2">
+    </div>
+    <div class="carousel-item">
+      <img src="images/sepatu3.png" class="d-block w-100" alt="Shoe 3">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#shoeCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#shoeCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- Akhir Carousel -->
+
+<!-- Products Section -->
+<div class="container mt-5" id="products">
+  <h2 class="text-center mb-4">Our Products</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card product-card">
+        <img src="images/sepatu1.png" class="card-img-top" alt="Shoe 1">
+        <div class="card-body">
+          <h5 class="card-title">Nike Air Max 90 Ultra</h5>
+          <p class="card-text">$99.99</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card product-card">
+        <img src="images/sepatu2.png" class="card-img-top" alt="Shoe 2">
+        <div class="card-body">
+          <h5 class="card-title">Nike Air Max 1 Ultra</h5>
+          <p class="card-text">$89.99</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card product-card">
+        <img src="images/sepatu3.png" class="card-img-top" alt="Shoe 3">
+        <div class="card-body">
+          <h5 class="card-title">Nike Superrep Go</h5>
+          <p class="card-text">$79.99</p>
+          <a href="#" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 RizKicks. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,2 +1,2 @@
-#Tugas Praktikum Pemrograman Web II
-Nim 09031282328087 SIREG 4C
+# Tugas Praktikum Pemrograman Web II
+Ini adalah tugas mata kuliah pemrograman web II kelas SIREG 4C
